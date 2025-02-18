@@ -20,9 +20,9 @@ int main(){
     getchar();
 
     printf("Nome da cidade: ");
-    fgets(nomecidade1, sizeof(nomecidade1), stdin);
+    fgets(nomecidade1, sizeof(nomecidade1), stdin); // Ler uma linha incluindo espaços.
 
-    nomecidade1[strcspn(nomecidade1, "\n")] = '\0';
+    nomecidade1[strcspn(nomecidade1, "\n")] = '\0'; // Remove o caractere de nova linha (\n)
 
     printf("Quantidade da população: ");
     scanf("%d", &populacao1);
@@ -47,9 +47,9 @@ int main(){
     getchar();
 
     printf("Nome da cidade: ");
-    fgets(nomecidade2, sizeof(nomecidade2), stdin);
+    fgets(nomecidade2, sizeof(nomecidade2), stdin); // Ler uma linha incluindo espaços.
 
-    nomecidade2[strcspn(nomecidade2, "\n")] = '\0';
+    nomecidade2[strcspn(nomecidade2, "\n")] = '\0'; // Remove o caractere de nova linha (\n)
 
     printf("Quantidade da população: ");
     scanf("%d", &populacao2);
